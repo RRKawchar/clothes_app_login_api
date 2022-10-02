@@ -1,3 +1,4 @@
+import 'package:clothes_app_api/provider_state/login_provider.dart';
 import 'package:clothes_app_api/test.dart';
 import 'package:clothes_app_api/users/authentication/login_screen.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       home:FutureBuilder(
         builder: (context,snapshot){
 
-          return LoginScreen();
+          return LoginProvider();
         },
       )
     );
